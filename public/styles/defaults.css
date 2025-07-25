@@ -1,0 +1,183 @@
+/* -------------------------------------------------- */
+/* Default tags */
+/* -------------------------------------------------- */
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100dvh;
+  background: rgb(5, 5, 5);
+  color: rgb(160, 160, 160);
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  all: unset;
+  display: inline;
+  line-height: 1.3;
+}
+
+form {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  gap: 20px;
+  background: rgb(10, 10, 10);
+  outline: solid rgb(30, 30, 30) 1px;
+}
+
+label {
+  display: flex;
+  flex: 0;
+  margin-bottom: 6px;
+  color: rgb(220, 220, 220);
+}
+
+input,
+button {
+  all: unset;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  color: rgb(220, 220, 220);
+  border-radius: 4px;
+}
+
+input {
+  background: rgb(40, 40, 40);
+}
+
+input[readonly] {
+  caret-color: transparent;
+  pointer-events: none;
+}
+
+button {
+  background: rgb(60, 60, 60);
+  cursor: pointer;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease-out;
+}
+
+button:hover {
+  background: rgb(5, 45, 190);
+  color: white;
+}
+
+a {
+  all: unset;
+  color: rgb(160, 160, 160);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: .3s ease-out;
+}
+
+a:hover {
+  color: rgb(220, 220, 220);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 20px;
+}
+
+/* -------------------------------------------------- */
+/* Custom classes that crossover */
+/* -------------------------------------------------- */
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  min-height: 100%;
+  align-items: center;
+  /* background: red; */
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: rgb(160, 160, 160);
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.valid {
+  outline: solid rgb(55, 165, 255) 1px;
+}
+
+.error {
+  outline: solid red 1px;
+}
+
+.icon,
+.error-msg {
+  position: absolute;
+  right: 5px;
+}
+
+.icon {
+  position: absolute;
+  height: 20px;
+  cursor: pointer;
+}
+
+.error-msg {
+  padding: 8px;
+  background: rgba(140, 0, 0, 0.8);
+  outline: solid red 1px;
+  border-radius: 4px;
+  z-index: 999;
+  color: rgb(220, 220, 220);
+  max-width: 180px;
+  filter: drop-shadow(black 0 5px 5px);
+}
+
+#show-password {
+  border-radius: 0 4px 4px 0;
+  background: rgb(40, 40, 40);
+  width: 44px;
+  transition: unset;
+}
+
+#show-password:hover {
+  background: rgb(36, 36, 36);
+}
+
+#show-password img {
+  width: 20px;
+}

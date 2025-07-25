@@ -1,0 +1,41 @@
+body {
+  justify-content: center;
+}
+
+form h1 {
+  text-align: center;
+}
+
+form button[type="submit"] {
+  margin-top: 20px;
+}
+
+form p {
+  text-align: center;
+}
+
+#password-inputs {
+  gap: 4px;
+  flex-direction: row;
+}
+
+#password-wrapper {
+  border-radius: 4px;
+}
+
+#password-inputs div:nth-of-type(1) {
+  width: 100%;
+}
+
+#password-inputs input {
+  border-radius: 4px 0 0 4px;
+}
+
+.ban-msg {
+  padding: 8px;
+  background: rgba(140, 0, 0, 0.8);
+  outline: solid red 1px;
+  border-radius: 4px;
+  color: rgb(220, 220, 220);
+  text-align: center;
+}

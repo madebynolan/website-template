@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/defaults.css">
+  <link rel="stylesheet" href="./styles/error.css">
+  <title>Title</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      <h1>404</h1>
+      <h3>Page not found</h3>
+    </div>
+    <p>Click <a href="./index.html">here</a> to return home.</p>
+  </div>
+</body>
+</html>

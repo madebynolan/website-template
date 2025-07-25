@@ -1,0 +1,21 @@
+{
+  "name": "website_template",
+  "version": "1.0.0",
+  "description": "Every web dev needs a starting point, so that's what this is.\r I'm coding everything here from scratch (MySQL setup, Page designs, Handlers, and so on)\r The goal is to have a secure and clear starting point for every project moving forward.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "badwords": "^1.0.0",
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.2"
+  }
+}

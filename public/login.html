@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="page-script" content="login">
+  <link rel="stylesheet" href="./styles/defaults.css">
+  <link rel="stylesheet" href="./styles/login.css">
+  <title>Title</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="/auth/login" method="POST" id="login-form" novalidate>
+      <h1>Login</h1>
+      <div class="separator"></div>
+      <div id="emails-usernames">
+        <label for="emailusername">Email or Username</label>
+        <div class="relative">
+          <input 
+          type="text" 
+          id="emailusername" 
+          name="emailusername" 
+          placeholder="Enter your email or username..."
+          oninput="this.value = this.value.toLowerCase()">
+        </div>
+      </div>
+      <div id="passwords">
+        <label for="password">Password</label>
+        <div id="password-wrapper">
+          <div id="password-inputs">
+            <div class="relative">
+              <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Enter your password...">
+            </div>
+            <button type="button" id="show-password">
+              <img src="./img/show-password-icon.svg" alt="Show Password">
+            </button>
+          </div>
+        </div>
+      </div>
+      <button type="submit" id="login">Login</button>
+      <div id="other">
+        <p><a href="./forgot-password.html">Forgot password?</a></p>
+        <p>Not a member? <a href="./signup.html">Signup</a> instead</p>
+      </div>
+    </form>
+  </div>
+  
+  <script type="module" src="./js/login.js"></script>
+</body>
+</html>

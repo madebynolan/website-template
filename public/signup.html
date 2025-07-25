@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="page-script" content="signup">
+  <link rel="stylesheet" href="./styles/defaults.css">
+  <link rel="stylesheet" href="./styles/signup.css">
+  <title>Title</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="/auth/signup" method="POST" id="signup-form" novalidate>
+      <h1>Sign Up</h1>
+      <div class="separator"></div>
+      <div id="names">
+      <div id="left">
+        <label for="firstname">First Name</label>
+        <div class="relative">
+          <input 
+            type="text" 
+            id="firstname" 
+            name="firstname" 
+            placeholder="Your first name..."
+            oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)">
+        </div>
+      </div>
+      <div id="right">
+        <label for="lastname">Last Name</label>
+        <div class="relative">
+          <input 
+            type="text" 
+            id="lastname" 
+            name="lastname" 
+            placeholder="Your last name..."
+            oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)">
+        </div>
+      </div>
+    </div>
+      <div id="usernames">
+        <label for="username">Username</label>
+        <div class="relative">
+          <input 
+          type="text" 
+          id="username" 
+          name="username" 
+          placeholder="Choose a username..." 
+          oninput="this.value = this.value.toLowerCase()">
+        </div>
+      </div>
+      <div id="emails">
+        <label for="email">Email</label>
+        <div class="relative">
+          <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Your email address..."
+          oninput="this.value = this.value.toLowerCase()">
+        </div>
+      </div>
+      <div id="passwords">
+        <label for="password">Password</label>
+        <div id="password-wrapper">
+          <div id="password-inputs">
+            <div class="relative">
+              <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Choose a password...">
+            </div>
+            <button type="button" id="show-password">
+              <img src="./img/show-password-icon.svg" alt="Show Password">
+            </button>
+          </div>
+        </div>
+      </div>
+      <button type="submit" id="signup">Sign Up</button>
+      <div id="other">
+        <p>Already a member? <a href="./login">Login</a> instead</p>
+      </div>
+    </form>
+  </div>
+  
+  <script type="module" src="./js/signup.js"></script>
+</body>
+</html>

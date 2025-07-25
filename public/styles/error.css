@@ -1,0 +1,11 @@
+body {
+  justify-content: center;
+}
+
+.wrapper {
+  padding: 24px;
+  width: 100%;
+  max-width: 300px;
+  background: rgb(10, 10, 10);
+  outline: solid rgb(30, 30, 30) 1px;
+}
